@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/translatex_frontend/static/css/main.fe37c331.css",
-    "main.js": "/translatex_frontend/static/js/main.49d188bd.js",
+    "main.css": "/translatex_frontend/static/css/main.689e6949.css",
+    "main.js": "/translatex_frontend/static/js/main.e47c48c5.js",
     "static/js/787.6f9e2717.chunk.js": "/translatex_frontend/static/js/787.6f9e2717.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/translatex_frontend/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/translatex_frontend/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -64,12 +64,12 @@
     "static/media/KaTeX_Size3-Regular.woff": "/translatex_frontend/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/translatex_frontend/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/translatex_frontend/index.html",
-    "main.fe37c331.css.map": "/translatex_frontend/static/css/main.fe37c331.css.map",
-    "main.49d188bd.js.map": "/translatex_frontend/static/js/main.49d188bd.js.map",
+    "main.689e6949.css.map": "/translatex_frontend/static/css/main.689e6949.css.map",
+    "main.e47c48c5.js.map": "/translatex_frontend/static/js/main.e47c48c5.js.map",
     "787.6f9e2717.chunk.js.map": "/translatex_frontend/static/js/787.6f9e2717.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe37c331.css",
-    "static/js/main.49d188bd.js"
+    "static/css/main.689e6949.css",
+    "static/js/main.e47c48c5.js"
   ]
 }
