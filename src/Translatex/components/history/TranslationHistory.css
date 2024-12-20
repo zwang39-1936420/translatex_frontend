@@ -1,0 +1,150 @@
+.history-container {
+  position: relative;
+  margin-top: 2rem;
+  z-index: 50;
+}
+
+.history-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.history-button,
+.clear-history-button {
+  background-color: var(--app-purple);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 40px;
+}
+
+.clear-history-button {
+  background-color: white;
+  color: var(--app-purple);
+  border: 1px solid var(--app-purple);
+}
+
+.clear-history-button:hover {
+  background-color: var(--app-purple);
+  color: white;
+}
+
+.history-button:hover,
+.clear-history-button:hover {
+  background-color: var(--app-purple-hover);
+  transform: translateY(-1px);
+}
+
+.history-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05),
+              0 4px 6px rgba(0, 0, 0, 0.1),
+              0 10px 20px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  max-width: 90vw;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.history-item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--app-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  transition: background-color 0.2s ease;
+}
+
+.history-item:hover {
+  background-color: #f8f8f8;
+}
+
+.latex-wrapper {
+  flex: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 0.5rem;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.history-item:first-child {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.history-item.empty {
+  color: var(--app-dark);
+  opacity: 0.7;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.history-item .copy-button {
+  background-color: var(--app-purple);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.history-item .copy-button:hover {
+  background-color: var(--app-purple-hover);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .history-dropdown {
+    min-width: 250px;
+    right: -1rem;
+  }
+
+  .history-button,
+  .clear-history-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.history-dropdown {
+  scrollbar-width: thin;
+  scrollbar-color: var(--app-border) transparent;
+}
+
+.history-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.history-dropdown::-webkit-scrollbar-thumb {
+  background-color: var(--app-border);
+  border-radius: 3px;
+}

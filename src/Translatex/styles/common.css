@@ -1,0 +1,79 @@
+:root {
+  --app-purple: #4f46e5;
+  --app-purple-hover: #4338ca;
+  --app-purple-light: rgba(79, 70, 229, 0.05);
+  --app-gray: #f4f4f8;
+  --app-dark: #1d1d1f;
+  --app-border: #e1e1e8;
+  --app-shadow: rgba(79, 70, 229, 0.1);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--app-gray);
+  color: var(--app-dark);
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Responsive containers */
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
+  }
+} 
+
+/* Global button styles */
+.button-primary {
+  background-color: var(--app-purple);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-primary:hover {
+  background-color: var(--app-purple-hover);
+  transform: translateY(-1px);
+}
+
+.button-secondary {
+  background-color: white;
+  color: var(--app-purple);
+  border: 1px solid var(--app-purple);
+  border-radius: 12px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-secondary:hover {
+  background-color: var(--app-purple-light);
+  transform: translateY(-1px);
+}
+
+/* Reset any potential conflicting styles */
+.history-button,
+.clear-history-button {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-flex !important;
+} 

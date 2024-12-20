@@ -1,0 +1,7 @@
+/* Import common styles first */
+@import './common.css';
+
+/* Then import component-specific styles */
+@import '../components/fileUpload/FileUploadArea.css';
+@import '../components/history/TranslationHistory.css';
+@import '../components/buttons/CopyToClipboard.css'; 

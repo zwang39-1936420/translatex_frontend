@@ -1,0 +1,20 @@
+.copy-button {
+  background-color: var(--app-purple);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.copy-button:hover {
+  background-color: var(--app-purple-hover);
+  transform: translateY(-1px);
+} 

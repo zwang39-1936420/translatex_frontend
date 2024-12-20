@@ -1,0 +1,141 @@
+.upload-container {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 6px var(--app-shadow);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--app-border);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: var(--app-gray);
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  border-color: var(--app-purple);
+  background-color: var(--app-purple-light);
+}
+
+.upload-icon {
+  color: var(--app-purple);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.upload-text {
+  font-size: 1.1rem;
+  color: var(--app-dark);
+  margin-bottom: 1.5rem;
+}
+
+.upload-button,
+.submit-button {
+  background-color: var(--app-purple);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-button:hover,
+.submit-button:hover {
+  background-color: var(--app-purple-hover);
+  transform: translateY(-1px);
+}
+
+.preview-container {
+  position: relative;
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: var(--app-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.preview-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--app-shadow);
+}
+
+.remove-button {
+  background-color: var(--app-purple);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.remove-button:hover {
+  background-color: var(--app-purple-hover);
+  transform: scale(1.1);
+}
+
+.submit-button {
+  background-color: var(--app-purple);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: var(--app-purple-hover);
+  transform: translateY(-1px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+
+  .upload-area {
+    padding: 2rem 1rem;
+  }
+
+  .upload-text {
+    font-size: 1rem;
+  }
+
+  .upload-button {
+    padding: 0.6rem 1.5rem;
+  }
+} 

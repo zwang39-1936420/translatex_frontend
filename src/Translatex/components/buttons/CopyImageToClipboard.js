@@ -1,10 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import katex from 'katex';
 import * as htmlToImage from 'html-to-image';
 import ClipboardJS from 'clipboard';
-
-import 'katex/dist/katex.min.css'; // Import KaTeX styles
-import 'clipboard/dist/clipboard.min.js'; // Import ClipboardJS styles
+import 'katex/dist/katex.min.css';
+import 'clipboard/dist/clipboard.min.js';
 
 const LatexToImageAndCopyButton = ({ latexCode }) => {
   var Latex = require('react-latex');
